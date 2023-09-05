@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Encyclopedia
+{% endblock %}
+
+{% block body %}
+<h1>Add new Article</h1>
+
+<form action="{% url 'add_article' %}" method="POST" class="add_new">
+    {% csrf_token %}
+    <label>Title</label>
+    <input type="text" name="title" placeholder="Article Title" required class="title_input" pattern = "[A-Za-z0-9]{1,20}" >
+    <label>content</label>
+    <textarea name="content" placeholder="Write Your Article" required pattern = "[A-Za-z0-9]{1,20}" ></textarea>
+    <input type="submit" name="submit" class="btn btn-success">
+</form>
+</div>
+{% endblock %}

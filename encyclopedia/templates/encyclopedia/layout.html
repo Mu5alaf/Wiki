@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="icon" type="icon" href="{% static 'source/logo.png'%}">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link href="{% static 'encyclopedia/styles.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="row">
+    <div class="sidebar col-lg-2 col-md-3">
+      <div class="title">
+        <h2>Wiki</h2>
+        <img src="{% static 'source/wiki.png' %}" alt="wiki logo">
+      </div>
+      <div class="input_bar">
+        <form method="GET" action="{% url 'find' %}">
+          {% csrf_token %}
+          <input class="search" type="text" name="q" placeholder="Search Encyclopedia" />
+        </form>
+      </div>
+      <div class="left_ul">
+        <div>
+          <a href="{% url 'index' %}">Home</a>
+        </div>
+        <div>
+          <a href="{%url 'add_article'%}">Create New Page</a>
+        </div>
+        <div>
+          <a href="{%url 'random_page' %}"> Random page </a>
+        </div>
+        <div>
+          <img  class="cs-logo" src="{% static 'source/cs50.png' %}">
+        </div>
+      </div>
+      {% block nav %} {% endblock %}
+    </div>
+    <div class="main col-lg-10 col-md-9">{% block body %} {% endblock %}</div>
+  </div>
+</body>
+
+</html>

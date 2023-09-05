@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Encyclopedia
+{% endblock %}
+
+{% block body %}
+<div class="massage">
+    <ion-icon name="bug-outline"></ion-icon>
+    <h1>Oops!</h1>
+    <h1 class="error_colo">[ {{title}} ]</h1>
+    <h2>{{massage}}</h2>
+</div>
+{% endblock %}

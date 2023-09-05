@@ -1,0 +1,7 @@
+# C++
+
+
+
+
+
+is a high-level, general-purpose programming language created by Danish computer scientist Bjarne.

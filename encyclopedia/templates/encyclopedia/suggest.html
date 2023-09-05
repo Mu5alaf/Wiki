@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Encyclopedia
+{% endblock %}
+
+{% block body %}
+<div class="page_result">
+<h1>Do you mean ?</h1>
+<span>[ {{count}} result are found  ]</span>
+</div>
+<ul>
+    {% for user_entry in  sugg_results %}
+    <li><a href="{% url 'user_entry' title=user_entry %}">{{user_entry}}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

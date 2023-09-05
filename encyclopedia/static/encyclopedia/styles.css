@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FBFBF2;
+    width: 100vw;
+    height: 100vh;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+textarea {
+    height: 40vh;
+    width: 80%;
+}
+.row{
+    width: 100vw;
+    height: 100vh;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    width: 100%;
+    background-color: #E5E4E2;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+ion-icon {
+    font-size: 100px;
+    color: #3e3e3e;
+}
+
+.massage {
+    margin: 200px;
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.main a {
+    font-size: 30px;
+    font-weight: 500;
+    color:#3457D5 ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title img {
+    width: 30%;
+}
+
+.title img:hover {
+    transform: rotate(360deg);
+    transition: all 2s;
+}
+
+.title h2 {
+    color: #333;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.input_bar input {
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+.left_ul {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.left_ul a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left_ul a:hover {
+    transition: all 0.5s;
+    color: #3457D5;
+}
+
+.add_new {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.title_input {
+    width: 50%;
+}
+
+.btn{
+    width: 10%;
+}
+
+.btn:hover {
+    background-color: #e3e3e3;
+    color: #000000;
+    width: 10%;
+}
+
+.error_colo {
+    color: #f00f00;
+}
+.page_result{
+    text-align: center;
+    border: #000 solid 1px;
+    background-color: #E5E4E2;
+    text-transform: uppercase;
+}
+.page_result span {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #A51C30;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.cs-logo {
+    margin: 25px;
+    border: #000 solid 5px;
+    padding-top: 30px;
+    width: 60%;
+    background-color: #A51C30;
+}
+
+.cs-logo:hover {
+    transform: scale(1.5);
+    transition: all 1.5s;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+.content h1{
+    font-size: 50px;
+    background-color: #A51C30;
+    border:#000 solid 5px;
+}
+.content p{
+    text-align: start;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+}
